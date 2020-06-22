@@ -4,5 +4,4 @@ Mandar archivo a staging area: git add nombre_archivo
 Mandar todos los archivos nuevos a staging area: git add .
 Empaquetar los archivos en commit: git commit -m "comentario"
 Subir los archivos a git: git push
-
-
+eliminar un archivo: git rm nombre_archivo
