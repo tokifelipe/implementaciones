@@ -2,6 +2,10 @@ git status
 git diff
 Mandar archivo a staging area: git add nombre_archivo
 Mandar todos los archivos nuevos a staging area: git add .
-Empaquetar los archivos en commit: git commit -m "comentario"
+Empaquetar todos los archivos en commit: git commit -m "comentario"
+Empaquetar un archivo en commit: git commit nom_archivi "comentario"
 Subir los archivos a git: git push
 eliminar un archivo: git rm nombre_archivo
+descargar archivos desde git a local repo: git fetch
+ver lo que hay por desempaquetar desde local repo: git checkout
+desempaquetar lo que hay en local repo: git merge
