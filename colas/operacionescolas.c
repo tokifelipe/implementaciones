@@ -33,8 +33,13 @@ telemenqueue frontvaluequeue(queue *Q)
 	return Q.qArray[Q.prim];
 }
 //Retorna el tamaño de la cola
-int sizequeue(telemenqueue* Q)
-{
+int sizequeue(telemenqueue* Q){
+	if(Q.ult>Q.prim)
+		return Q.ult-Q.prim+1;
+	else(Q.ult=-1 && Q.prim=0)
+		return 0;
+	else
+		return MAX_SIZE-(Q.prim-Q.ult-1);
 
 
 }
