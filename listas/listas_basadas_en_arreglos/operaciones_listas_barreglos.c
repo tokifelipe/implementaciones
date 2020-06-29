@@ -86,6 +86,6 @@ telemlista getvaluelba(tlista L){
 }
 //Elimina de la lista eliminando memoria y recursos
 void (tlista* L){
-	free()
+	free((void* )L.listarray);
 }
-/
+
