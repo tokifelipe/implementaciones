@@ -115,7 +115,7 @@ void prehelp(tnodotreebin *nodo)
 }
 
 
-//Recorrido pre-orden de un ABB T
+//Recorrido postrden de un ABB T
 /*Funcion principal*/
 void post(tabb *T){
 	posthelp(T.raiz)
@@ -128,4 +128,27 @@ void posthelp(tnodotreebin *nodo)
 	posthelp(nodo.der);
 	procesar(getvalueabb(nodo));//procesa nodo¿?,lo podria imprimir
 }
+//Minimo
+/*Funcion principal*/
+tipotree min(tabb *T)
+{
+	minhelp(T.raiz);
+}
+tipotree minhelp(tnodotipotreebin* nodo)
+{
+	if (nodo.izq=NULL) return nodo.item;
+	else minhelp(nodo.izq);
+}
+//maximo
+/*Funcion principal*/
+tipotree max(tabb *T)
+{
+	maxhelp(T.raiz);
+}
+tipotree maxhelp(tnodotipotreebin* nodo)
+{
+	if (nodo.der=NULL) return nodo.item;
+	else maxhelp(nodo.der);
+}
+
 
